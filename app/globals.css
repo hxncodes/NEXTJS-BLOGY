@@ -10,6 +10,7 @@
   a {
     @apply hover:underline font-medium
   }
+
 }
 
 @layer utilities {
@@ -28,8 +29,13 @@
     @apply flex items-center gap-2
   }
 
+    .btn-sm {
+      @apply py-1 px-2 text-sm rounded-full font-normal
+    }
+
   .btn-lg {
     @apply py-4 px-6 text-2xl rounded-full
   }
 
 }
+

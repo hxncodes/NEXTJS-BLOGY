@@ -29,7 +29,6 @@ const Navbar = () => {
           </button>
           <button className=" btn btn-primary">Join</button>
         </div>
-        L
       </div>
     </div>
   );
