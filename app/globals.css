@@ -4,6 +4,32 @@
 
 @layer base {
   body {
-    @apply bg-slate-900 text-slate-200
+    @apply container mx-auto px-8
   }
+
+  a {
+    @apply hover:underline
+  }
+}
+
+@layer utilities {
+
+  .btn {@apply py-2 px-4 rounded-3xl font-bold}
+ 
+  .btn-primary {
+    @apply bg-black text-white hover:bg-blueColor
+  }
+
+  .btn-secondary {
+    @apply bg-lime-400 bg-lightGrayColor hover:bg-darkGrayColor
+  }
+
+  .btn-icon {
+    @apply flex items-center gap-2
+  }
+
+  .btn-lg {
+    @apply py-4 px-6 text-2xl rounded-full
+  }
+
 }
