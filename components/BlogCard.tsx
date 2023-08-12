@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const BlogCard = () => {
   return (
-    <div className="w-[28%] flex flex-col shrink-0">
+    <div className="w-[38%] md:w-[28%] flex flex-col shrink-0">
       <div className="relative overflow-hidden">
         <img
           src="/images/blog1.jpg"
