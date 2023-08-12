@@ -1,6 +1,7 @@
 "use client";
 
 import BlogCard from "./BlogCard";
+import Card from "./Card";
 
 const Stories = () => {
   return (
@@ -9,22 +10,26 @@ const Stories = () => {
         Get started with our <span className="font-bold">best stories</span>
       </h2>
       <div className="flex flex-row gap-4 overflow-visible overflow-x-scroll py-2 mr-[-50px]">
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
+        <div className="w-[38%] md:w-[28%] flex flex-col shrink-0">
+          <Card />
+        </div>
+        <div className="w-[38%] md:w-[28%] flex flex-col shrink-0">
+          <Card />
+        </div>
+        <div className="w-[38%] md:w-[28%] flex flex-col shrink-0">
+          <Card />
+        </div>
+        <div className="w-[38%] md:w-[28%] flex flex-col shrink-0">
+          <Card />
+        </div>
+        <div className="w-[38%] md:w-[28%] flex flex-col shrink-0">
+          <Card />
+        </div>
+        <div className="w-[38%] md:w-[28%] flex flex-col shrink-0">
+          <Card />
+        </div>
       </div>
-      <hr />
+      <hr className="h-px mt-12 bg-gray-300 border-0" />
     </div>
   );
 };
