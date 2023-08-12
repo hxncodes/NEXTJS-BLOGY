@@ -5,7 +5,14 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+
   theme: {
+    screens: {
+      sm: "574px",
+      md: "767px",
+      lg: "992px",
+      xl: "1280px",
+    },
     extend: {
       colors: {
         lightGrayColor: "#F3F1F3",

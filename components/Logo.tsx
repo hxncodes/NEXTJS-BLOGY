@@ -1,9 +1,15 @@
-import Image from "next/image";
+import NextImage from "next/image";
 
 const Logo = () => {
   return (
-    <div>
-      <Image src="/images/logo.svg" alt="logo" width={150} height={100} />
+    <div className="">
+      <NextImage
+        src="/images/logo.svg"
+        alt="logo"
+        width={50}
+        height={50}
+        className="w-32 object-contain"
+      />
     </div>
   );
 };

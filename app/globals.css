@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply container mx-auto px-8
+    @apply w-full mx-auto px-4 sm:px-14
   }
 
   a {
@@ -15,7 +15,7 @@
 
 @layer utilities {
 
-  .btn {@apply py-2 px-4 rounded-3xl font-bold}
+  .btn {@apply py-2 px-5 rounded-3xl font-bold}
  
   .btn-primary {
     @apply bg-black text-white hover:bg-blueColor
@@ -29,9 +29,13 @@
     @apply flex items-center gap-2
   }
 
-    .btn-sm {
+  .btn-sm {
       @apply py-1 px-2 text-sm rounded-full font-normal
     }
+
+  .btn-md {
+    @apply py-3 px-6 text-lg
+  }
 
   .btn-lg {
     @apply py-4 px-6 text-2xl rounded-full

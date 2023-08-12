@@ -1,24 +1,25 @@
 "use client";
 
-import Image from "next/image";
 import { BsSearch } from "react-icons/bs";
+import { GiHamburgerMenu } from "react-icons/gi";
 import Logo from "./Logo";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
     <div className="flex justify-between pt-7">
       <Logo />
-      <div className="flex items-center gap-4">
+      <div className="hidden lg:flex items-center gap-4">
         <div className="text-lg font-medium">
           <ul className="flex gap-4">
             <li>
-              <a href="#">Home</a>
+              <Link href="#">Home</Link>
             </li>
             <li>
-              <a href="#">Recen Post</a>
+              <Link href="#">Recen Post</Link>
             </li>
             <li>
-              <a href="#">Membership</a>
+              <Link href="#">Membership</Link>
             </li>
           </ul>
         </div>
@@ -27,8 +28,12 @@ const Navbar = () => {
             <BsSearch />
             Search
           </button>
-          <button className=" btn btn-primary">Join</button>
+          <button className="btn btn-primary">Join</button>
         </div>
+      </div>
+      <div className="flex gap-3 items-center justify-center lg:hidden text-2xl">
+        <BsSearch />
+        <GiHamburgerMenu className="text-4xl" />
       </div>
     </div>
   );

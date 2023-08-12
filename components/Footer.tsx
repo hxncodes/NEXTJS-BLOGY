@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import FooterCard from "./FooterCard";
 import Logo from "./Logo";
 import { socialLinks, about, features, membership } from "@/data/links";
@@ -20,28 +21,28 @@ const Footer = () => {
           {socialLinks.map(({ id, icon, url, link }) => (
             <li key={id} className="flex items-center gap-2">
               {icon}
-              <a href={url}>{link}</a>
+              <Link href={url}>{link}</Link>
             </li>
           ))}
         </FooterCard>
         <FooterCard title="About">
           {about.map(({ id, url, link }) => (
             <li key={id} className="flex items-center gap-2">
-              <a href={url}>{link}</a>
+              <Link href={url}>{link}</Link>
             </li>
           ))}
         </FooterCard>
         <FooterCard title="Features">
           {features.map(({ id, url, link }) => (
             <li key={id} className="flex items-center gap-2">
-              <a href={url}>{link}</a>
+              <Link href={url}>{link}</Link>
             </li>
           ))}
         </FooterCard>
         <FooterCard title="Membership">
           {membership.map(({ id, url, link }) => (
             <li key={id} className="flex items-center gap-2">
-              <a href={url}>{link}</a>
+              <Link href={url}>{link}</Link>
             </li>
           ))}
         </FooterCard>
