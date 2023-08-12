@@ -6,9 +6,18 @@ import Logo from "./Logo";
 import { socialLinks, about, features, membership } from "@/data/links";
 const Footer = () => {
   return (
-    <footer className="flex flex-col items-center justify-center">
-      <div className="grid lg:grid-cols-6 py-10">
-        <div className="col-span-2">
+    <footer className="">
+      <div className="xl:hidden">
+        <div className="w-full md:w-[60%] lg:w-[40%]">
+          <Logo />
+          <h2 className="text-lg font-medium pt-4">
+            A minimal, functional theme for running a paid-membership
+            publication on Ghost.
+          </h2>
+        </div>
+      </div>
+      <div className="grid sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6 py-10">
+        <div className="hidden xl:block xl:col-span-2">
           <div className="w-3/4">
             <Logo />
             <h2 className="text-lg font-medium pt-8">
