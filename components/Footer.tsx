@@ -3,6 +3,7 @@
 import Link from "next/link";
 import FooterCard from "./FooterCard";
 import Logo from "./Logo";
+import Image from "next/image";
 import { socialLinks, about, features, membership } from "@/data/links";
 const Footer = () => {
   return (
@@ -56,8 +57,18 @@ const Footer = () => {
           ))}
         </FooterCard>
       </div>
-      <div className="py-4">
-        <p>© Blogy {new Date().getFullYear()}. Published by hxnCodes.</p>
+      <div className="py-4 w-full text-center">
+        <p className="text-[0.8rem] text-gray-600">
+          © Blogy {new Date().getFullYear()}. Published by
+          <Image
+            src="/images/hxncodes.png"
+            width={20}
+            height={20}
+            alt="logo"
+            className="rounded-full inline"
+          />
+          hxnCodes
+        </p>
       </div>
     </footer>
   );

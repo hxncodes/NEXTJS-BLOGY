@@ -4,9 +4,9 @@ import Card from "./Card";
 
 const LatestBlogs = () => {
   return (
-    <section className="flex flex-col">
-      <div className="flex flex-row items-center justify-between mb-8">
-        <h2 className="text-4xl sm:text-[3.35rem] md:text-6xl font-light">
+    <section className="flex flex-col items-center">
+      <div className="w-full flex flex-row items-center justify-between mb-8">
+        <h2 className="text-3xl sm:text-5xl lg:text-6xl font-light">
           See what we’ve <br />
           <span className="break-all font-bold">written lately</span>
         </h2>
@@ -57,6 +57,10 @@ const LatestBlogs = () => {
         <Card />
         <Card />
       </div>
+      <div className="py-8">
+        <button className="btn btn-primary btn-md lg:btn-lg">Load more</button>
+      </div>
+      <hr />
     </section>
   );
 };

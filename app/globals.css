@@ -11,11 +11,15 @@
     @apply hover:underline font-medium
   }
 
+  hr {
+    @apply w-full h-px mt-12 bg-gray-300 border-0
+  }
+
 }
 
 @layer utilities {
 
-  .btn {@apply py-2 px-5 rounded-3xl font-bold}
+  .btn {@apply py-2 px-5 rounded-3xl font-medium}
  
   .btn-primary {
     @apply bg-black text-white hover:bg-blueColor
@@ -38,7 +42,7 @@
   }
 
   .btn-lg {
-    @apply py-4 px-6 text-2xl rounded-full
+    @apply py-4 px-8 text-2xl rounded-full
   }
 
   .avatar {

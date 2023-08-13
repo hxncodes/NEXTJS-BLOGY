@@ -29,7 +29,7 @@ const Stories = () => {
           <Card />
         </div>
       </div>
-      <hr className="h-px mt-12 bg-gray-300 border-0" />
+      <hr />
     </div>
   );
 };

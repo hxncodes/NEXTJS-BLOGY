@@ -20,7 +20,7 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <hr className="h-px mt-20 bg-gray-300 border-0" />
+      <hr />
     </section>
   );
 };
