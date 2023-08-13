@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between pt-7">
+    <div className="flex justify-between pt-7 main-container">
       <Logo />
       <div className="hidden lg:flex items-center gap-4">
         <div className="text-lg font-medium">
