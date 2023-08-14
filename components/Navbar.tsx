@@ -4,9 +4,10 @@ import { BsSearch } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Logo from "./Logo";
 import Link from "next/link";
+import { MouseEventHandler } from "react";
 
 interface Props {
-  onClick: () => {};
+  onClick: React.MouseEventHandler<HTMLButtonElement>;
 }
 
 const Navbar = ({ onClick }: Props) => {
@@ -36,7 +37,9 @@ const Navbar = ({ onClick }: Props) => {
         </div>
       </div>
       <div className="flex gap-3 items-center justify-center lg:hidden text-2xl">
-        <BsSearch />
+        <button onClick={onClick}>
+          <BsSearch />
+        </button>
         <GiHamburgerMenu className="text-4xl" />
       </div>
     </nav>

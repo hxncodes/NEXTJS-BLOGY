@@ -10,7 +10,7 @@ import Navbar from "@/components/Navbar";
 import { useState } from "react";
 
 export default function Home() {
-  const [searchOpen, setSearchOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState<Boolean>(false);
   return (
     <main>
       <SearchBox show={searchOpen} onClose={setSearchOpen} />
