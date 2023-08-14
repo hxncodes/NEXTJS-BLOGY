@@ -6,12 +6,16 @@ import Footer from "@/components/Footer";
 import LatestBlogs from "@/components/LatestBlogs";
 import RecomendedSection from "@/components/RecomendedSection";
 import SearchBox from "@/components/SearchBox";
+import Navbar from "@/components/Navbar";
+import { useState } from "react";
 
 export default function Home() {
+  const [searchOpen, setSearchOpen] = useState(false);
   return (
     <main>
-      <SearchBox />
+      <SearchBox show={searchOpen} onClose={setSearchOpen} />
       <div className="main-container">
+        <Navbar onClick={() => setSearchOpen(true)} />
         <Hero />
         <Stories />
         <LatestBlogs />

@@ -5,9 +5,13 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import Logo from "./Logo";
 import Link from "next/link";
 
-const Navbar = () => {
+interface Props {
+  onClick: () => {};
+}
+
+const Navbar = ({ onClick }: Props) => {
   return (
-    <div className="flex justify-between pt-7 main-container">
+    <nav className="flex justify-between pt-7">
       <Logo />
       <div className="hidden lg:flex items-center gap-4">
         <div className="text-lg font-medium">
@@ -24,7 +28,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="flex gap-2">
-          <button className="btn btn-secondary btn-icon">
+          <button className="btn btn-secondary btn-icon" onClick={onClick}>
             <BsSearch />
             Search
           </button>
@@ -35,7 +39,7 @@ const Navbar = () => {
         <BsSearch />
         <GiHamburgerMenu className="text-4xl" />
       </div>
-    </div>
+    </nav>
   );
 };
 
