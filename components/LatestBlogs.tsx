@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Card from "./Card";
+import { blogs } from "@/data/blog";
 
 const LatestBlogs = () => {
   return (
@@ -50,12 +51,15 @@ const LatestBlogs = () => {
         </div>
       </div>
       <div className="grid grid-cols-3 gap-4">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {blogs.map((blog) => (
+          <Card
+            title={blog.title}
+            description={blog.description}
+            imageURL={blog.imageURL}
+            tags={blog.tags}
+            authors={blog.authors}
+          />
+        ))}
       </div>
       <div className="py-8">
         <button className="btn btn-primary btn-md lg:btn-lg">Load more</button>

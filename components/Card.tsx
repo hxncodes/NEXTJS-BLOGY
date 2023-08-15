@@ -1,13 +1,14 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 interface Props {
   title: string;
-  description: string;
+  description?: string;
   imageURL: string;
-  tags: string[];
-  authors: Object[];
+  tags?: string[];
+  authors: any;
 }
 
 const Card = ({ title, description, imageURL, tags, authors }: Props) => {
@@ -20,7 +21,7 @@ const Card = ({ title, description, imageURL, tags, authors }: Props) => {
           className="rounded-3xl w-[100%] h-[100%]"
         />
         <div className="flex absolute bottom-2 left-3">
-          {authors?.map((author) => (
+          {authors?.map((author: { avatar: string }) => (
             <Link className="w-10 h-10 rounded-full" href={"#"}>
               <Image
                 src={author.avatar}

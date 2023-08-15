@@ -10,8 +10,8 @@ export const blogs = [
         avatar: "/images/author1.jpg",
       },
       {
-        name: "hxnCodes",
-        avatar: "/images/author1.jpg",
+        name: "rana",
+        avatar: "/images/author2.jpg",
       },
     ],
   },

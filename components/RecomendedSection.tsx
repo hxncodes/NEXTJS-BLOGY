@@ -15,10 +15,7 @@ const RecomendedSection = () => {
             description={blog.description}
             imageURL={blog.imageURL}
             tags={blog.tags}
-            author={blog.author}
-            authorAvatar={blog.authorAvatar}
-            coAuthor={blog.coAuthor}
-            coAuthorAvatar={blog.coAuthorAvatar}
+            authors={blog.authors}
           />
         ))}
       </div>
