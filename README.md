@@ -2,8 +2,6 @@
 
 Welcome to Blogy, a simple and elegant blog app built using Next.js, TypeScript, TailwindCSS.
 
-![Blogy Banner](https://drive.google.com/file/d/1IYmEexBpMt9dLMxh8QlPHWZsgQr_lJGV/view?usp=drive_link)
-
 ![Blogy](https://github.com/hxncodes/NEXTJS-BLOGY/blob/main/nextjs-blogy.png?raw=true)
 
 ## Features
