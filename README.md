@@ -4,6 +4,8 @@ Welcome to Blogy, a simple and elegant blog app built using Next.js, TypeScript,
 
 ![Blogy Banner](https://drive.google.com/file/d/1IYmEexBpMt9dLMxh8QlPHWZsgQr_lJGV/view?usp=drive_link)
 
+![Blogy](https://github.com/hxncodes/NEXTJS-BLOGY/blob/main/nextjs-blogy.png?raw=true)
+
 ## Features
 
 - Responsive design for various devices.
@@ -65,10 +67,3 @@ If you're interested in contributing to Blogy, please follow these steps:
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
-
-Feel free to customize this README template to match your app's specific details and branding. Happy coding!
-
-```
-
-In this template, make sure to replace the placeholder URLs for images with actual URLs to the images you want to use. Additionally, customize the content and structure according to your app's specific features and requirements.
-```

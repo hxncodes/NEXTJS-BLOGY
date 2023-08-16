@@ -2,6 +2,8 @@ import React from "react";
 import Image from "next/image";
 import Card from "./Card";
 import { blogs } from "@/data/blog";
+import { authors } from "@/data/authors";
+import Avatar from "./Avatar";
 
 const LatestBlogs = () => {
   return (
@@ -14,35 +16,9 @@ const LatestBlogs = () => {
         <div className="hidden md:block">
           <div className="flex">
             <div className="flex -space-x-4">
-              <a className="avatar" href="#">
-                <Image
-                  loading="lazy"
-                  src="/images/author1.jpg"
-                  width={100}
-                  height={100}
-                  alt="author"
-                  className="rounded-full"
-                />
-              </a>
-              <a className="avatar" href="#">
-                <Image
-                  loading="lazy"
-                  src="/images/author2.jpg"
-                  width={100}
-                  height={100}
-                  alt="author"
-                  className="rounded-full"
-                />
-              </a>
-              <a className="avatar" href="#">
-                <Image
-                  src="/images/author2.jpg"
-                  width={100}
-                  height={100}
-                  alt="author"
-                  className="rounded-full"
-                />
-              </a>
+              {authors.map((author) => (
+                <Avatar key={author.id} imageUrl={author.avatar} />
+              ))}
             </div>
           </div>
           <p className="text-right text-base text-gray-600 mt-2">
