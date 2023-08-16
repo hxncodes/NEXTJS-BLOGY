@@ -1,15 +1,13 @@
 "use client";
-
 import React, { Fragment } from "react";
 import { toast, Toaster } from "react-hot-toast";
 
-const AddBlog = () => {
+const EditBlog = () => {
   return (
     <main className="main-container pt-8">
       <div>
         <h2 className="text-3xl sm:text-5xl lg:text-6xl font-light">
-          Edit your fresh thoughts in{" "}
-          <span className="break-all font-bold">Blog</span>
+          Add new and creative <span className="break-all font-bold">Blog</span>
         </h2>
         <Fragment>
           <Toaster />
@@ -27,9 +25,14 @@ const AddBlog = () => {
                   placeholder="Enter description here"
                 ></textarea>
 
-                <button className="btn btn-primary float-right" type="submit">
-                  Submit
-                </button>
+                <div className="flex flex-row justify-between">
+                  <button className="btn btn-primary" type="submit">
+                    Update
+                  </button>
+                  <button className="btn bg-red-500 text-white hover:bg-red-700">
+                    Delete
+                  </button>
+                </div>
               </form>
             </div>
           </div>
@@ -39,4 +42,4 @@ const AddBlog = () => {
   );
 };
 
-export default AddBlog;
+export default EditBlog;
