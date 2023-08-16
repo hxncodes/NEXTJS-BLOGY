@@ -1,112 +1,108 @@
 import { BsFacebook, BsTwitter, BsPinterest, BsVimeo } from "react-icons/bs";
 
+export const navLinks = [
+  {
+    name: "Home",
+    url: "#",
+  },
+  {
+    name: "Recent Post",
+    url: "#",
+  },
+  {
+    name: "Membership",
+    url: "#",
+  },
+];
+
 export const socialLinks = [
   {
-    id: 0,
     icon: <BsFacebook />,
-    link: "Facebook",
+    name: "Facebook",
     url: "#",
   },
   {
-    id: 1,
     icon: <BsTwitter />,
-    link: "Twitter",
+    name: "Twitter",
     url: "#",
   },
   {
-    id: 2,
     icon: <BsPinterest />,
-    link: "Pinterest",
+    name: "Pinterest",
     url: "#",
   },
   {
-    id: 3,
     icon: <BsVimeo />,
-    link: "Vimeo",
+    name: "Vimeo",
     url: "#",
   },
 ];
 
 export const about = [
   {
-    id: 0,
-    link: "Style Guide",
+    name: "Style Guide",
     url: "#",
   },
   {
-    id: 1,
-    link: "Features",
+    name: "Features",
     url: "#",
   },
   {
-    id: 2,
-    link: "Contact",
+    name: "Contact",
     url: "#",
   },
   {
-    id: 3,
-    link: "404",
+    name: "404",
     url: "#",
   },
   {
-    id: 0,
-    link: "Privacy Policy",
+    name: "Privacy Policy",
     url: "#",
   },
 ];
 
 export const features = [
   {
-    id: 0,
-    link: "Upcoming Events",
+    name: "Upcoming Events",
     url: "#",
   },
   {
-    id: 1,
-    link: "Blog & News",
+    name: "Blog & News",
     url: "#",
   },
   {
-    id: 2,
-    link: "Features",
+    name: "Features",
     url: "#",
   },
   {
-    id: 3,
-    link: "FAQ Question",
+    name: "FAQ Question",
     url: "#",
   },
   {
-    id: 0,
-    link: "Testimonial",
+    name: "Testimonial",
     url: "#",
   },
 ];
 
 export const membership = [
   {
-    id: 0,
-    link: "Account",
+    name: "Account",
     url: "#",
   },
   {
-    id: 1,
-    link: "Membership",
+    name: "Membership",
     url: "#",
   },
   {
-    id: 2,
-    link: "Subscribe",
+    name: "Subscribe",
     url: "#",
   },
   {
-    id: 3,
-    link: "Tags",
+    name: "Tags",
     url: "#",
   },
   {
-    id: 0,
-    link: "Authors",
+    name: "Authors",
     url: "#",
   },
 ];

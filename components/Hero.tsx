@@ -4,7 +4,7 @@ import Subscribe from "./Subscribe";
 
 const Hero = () => {
   return (
-    <section>
+    <header>
       <div className="flex py-8 lg:py-14">
         <h1 className="text-4xl sm:text-[3.35rem] md:text-7xl lg:text-[5.5rem] font-light leading-tight">
           <span className="font-bold">Hey, we’re Blogy.</span> See our thoughts,
@@ -21,7 +21,7 @@ const Hero = () => {
         </div>
       </div>
       <hr />
-    </section>
+    </header>
   );
 };
 

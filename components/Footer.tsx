@@ -28,31 +28,31 @@ const Footer = () => {
           </div>
         </div>
         <FooterCard title="Social">
-          {socialLinks.map(({ id, icon, url, link }) => (
-            <li key={id} className="flex items-center gap-2">
+          {socialLinks.map(({ icon, url, name }) => (
+            <li key={name} className="flex items-center gap-2">
               {icon}
-              <Link href={url}>{link}</Link>
+              <Link href={url}>{name}</Link>
             </li>
           ))}
         </FooterCard>
         <FooterCard title="About">
-          {about.map(({ id, url, link }) => (
-            <li key={id} className="flex items-center gap-2">
-              <Link href={url}>{link}</Link>
+          {about.map(({ url, name }) => (
+            <li key={name} className="flex items-center gap-2">
+              <Link href={url}>{name}</Link>
             </li>
           ))}
         </FooterCard>
         <FooterCard title="Features">
-          {features.map(({ id, url, link }) => (
-            <li key={id} className="flex items-center gap-2">
-              <Link href={url}>{link}</Link>
+          {features.map(({ url, name }) => (
+            <li key={name} className="flex items-center gap-2">
+              <Link href={url}>{name}</Link>
             </li>
           ))}
         </FooterCard>
         <FooterCard title="Membership">
-          {membership.map(({ id, url, link }) => (
-            <li key={id} className="flex items-center gap-2">
-              <Link href={url}>{link}</Link>
+          {membership.map(({ url, name }) => (
+            <li key={name} className="flex items-center gap-2">
+              <Link href={url}>{name}</Link>
             </li>
           ))}
         </FooterCard>
