@@ -53,6 +53,7 @@ const LatestBlogs = () => {
       <div className="grid grid-cols-3 gap-4">
         {blogs.map((blog) => (
           <Card
+            key={blog.id}
             title={blog.title}
             description={blog.description}
             imageURL={blog.imageURL}

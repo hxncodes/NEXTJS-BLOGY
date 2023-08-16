@@ -21,8 +21,12 @@ const Card = ({ title, description, imageURL, tags, authors }: Props) => {
           className="rounded-3xl w-[100%] h-[100%]"
         />
         <div className="flex absolute bottom-2 left-3">
-          {authors?.map((author: { avatar: string }) => (
-            <Link className="w-10 h-10 rounded-full" href={"#"}>
+          {authors?.map((author: { avatar: string; id: string }) => (
+            <Link
+              key={author.id}
+              className="w-10 h-10 rounded-full hover:bg-white"
+              href={"#"}
+            >
               <Image
                 src={author.avatar}
                 width={100}
@@ -36,7 +40,9 @@ const Card = ({ title, description, imageURL, tags, authors }: Props) => {
       </div>
       <div className="flex gap-1 py-2">
         {tags?.map((tag) => (
-          <button className="btn btn-sm btn-secondary">{tag}</button>
+          <button key={tag} className="btn btn-sm btn-secondary">
+            {tag}
+          </button>
         ))}
       </div>
       <div className="pb-2">

@@ -11,6 +11,7 @@ const RecomendedSection = () => {
       <div className="grid  sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 my-3">
         {blogs.map((blog) => (
           <Card
+            key={blog.id}
             title={blog.title}
             imageURL={blog.imageURL}
             tags={blog.tags}

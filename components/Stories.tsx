@@ -11,7 +11,10 @@ const Stories = () => {
       </h2>
       <div className="flex flex-row gap-4 overflow-visible overflow-x-scroll py-2 mr-[-50px]">
         {blogs.map((blog) => (
-          <div className="w-[38%] md:w-[28%] flex flex-col shrink-0">
+          <div
+            key={blog.id}
+            className="w-[38%] md:w-[28%] flex flex-col shrink-0"
+          >
             <Card
               title={blog.title}
               description={blog.description}

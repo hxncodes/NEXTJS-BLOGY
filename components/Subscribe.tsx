@@ -4,7 +4,7 @@ import React from "react";
 
 const Subscribe = () => {
   return (
-    <form action="">
+    <form action="" id="form" name="form">
       <div className="flex rounded-full bg-lightGrayColor hover:bg-darkGrayColor">
         <div>
           <input
