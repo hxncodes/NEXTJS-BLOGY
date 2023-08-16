@@ -12,16 +12,12 @@ import { useState } from "react";
 export default function Home() {
   const [searchOpen, setSearchOpen] = useState<Boolean>(false);
   return (
-    <main>
-      <SearchBox show={searchOpen} onClose={setSearchOpen} />
-      <div className="main-container">
-        <Navbar onClick={() => setSearchOpen(true)} />
-        <Hero />
-        <Stories />
-        <LatestBlogs />
-        <RecomendedSection />
-        <Footer />
-      </div>
+    <main className="main-container">
+      <Hero />
+      <Stories />
+      <LatestBlogs />
+      <RecomendedSection />
+      <Footer />
     </main>
   );
 }

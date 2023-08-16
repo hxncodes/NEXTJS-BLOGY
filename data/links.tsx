@@ -3,15 +3,15 @@ import { BsFacebook, BsTwitter, BsPinterest, BsVimeo } from "react-icons/bs";
 export const navLinks = [
   {
     name: "Home",
-    url: "#",
+    url: "/",
   },
   {
-    name: "Recent Post",
-    url: "#",
+    name: "Add Blog",
+    url: "/blog/add",
   },
   {
-    name: "Membership",
-    url: "#",
+    name: "Edit Blog",
+    url: "/blog/edit",
   },
 ];
 
