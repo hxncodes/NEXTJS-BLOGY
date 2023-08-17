@@ -6,6 +6,21 @@ export const navLinks = [
     url: "/",
   },
   {
+    name: "Recent Post",
+    url: "/blog/add",
+  },
+  {
+    name: "Membership",
+    url: "/blog/edit",
+  },
+];
+
+export const navLinksBlog = [
+  {
+    name: "Home",
+    url: "/",
+  },
+  {
     name: "Add Blog",
     url: "/blog/add",
   },

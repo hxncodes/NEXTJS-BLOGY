@@ -5,7 +5,7 @@ import { toast, Toaster } from "react-hot-toast";
 
 const AddBlog = () => {
   return (
-    <main className="main-container pt-8">
+    <main className="">
       <div>
         <h2 className="text-3xl sm:text-5xl lg:text-6xl font-light">
           Edit your fresh thoughts in{" "}

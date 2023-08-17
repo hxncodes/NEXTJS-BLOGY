@@ -6,6 +6,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import Logo from "./Logo";
 import Link from "next/link";
 import { navLinks } from "@/data/links";
+import { navLinksBlog } from "@/data/links";
 import { useState } from "react";
 
 interface Props {
@@ -15,6 +16,7 @@ interface Props {
 const Navbar = ({ onClick }: Props) => {
   const [open, setOpen] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [isLogIn, setLogin] = useState(false);
   return (
     <nav className="main-container flex items-center justify-between flex-wrap pt-7">
       <div className="mr-6 lg:mr-72">
@@ -25,6 +27,7 @@ const Navbar = ({ onClick }: Props) => {
         <button className="text-3xl" onClick={onClick}>
           <BsSearch />
         </button>
+
         <button onClick={() => setIsOpen(!isOpen)} className="">
           <GiHamburgerMenu
             className={`text-4xl ${isOpen ? "hidden" : "inline"}`}
@@ -42,11 +45,25 @@ const Navbar = ({ onClick }: Props) => {
       >
         <div className="text-lg font-medium w-full pr-4 flex justify-end">
           <ul className="block lg:flex gap-4">
-            {navLinks.map(({ url, name }) => (
-              <li className="mt-4 lg:mt-0" key={name}>
-                <Link href={url}>{name}</Link>
-              </li>
-            ))}
+            {isLogIn
+              ? navLinksBlog.map(({ url, name }) => (
+                  <li className="mt-4 lg:mt-0" key={name}>
+                    <Link href={url}>{name}</Link>
+                  </li>
+                ))
+              : navLinks.map(({ url, name }) => (
+                  <li className="mt-4 lg:mt-0" key={name}>
+                    <Link href={url}>{name}</Link>
+                  </li>
+                ))}
+            <li className="mt-4 lg:hidden">
+              <button
+                onClick={() => setLogin(!isLogIn)}
+                className="btn btn-primary"
+              >
+                {isLogIn ? "Logout" : "Login"}
+              </button>
+            </li>
           </ul>
         </div>
         <div className="hidden lg:flex gap-2">
@@ -54,7 +71,12 @@ const Navbar = ({ onClick }: Props) => {
             <BsSearch />
             Search
           </button>
-          <button className="btn btn-primary">Join</button>
+          <button
+            onClick={() => setLogin(!isLogIn)}
+            className="btn btn-primary"
+          >
+            {isLogIn ? "Logout" : "Login"}
+          </button>
         </div>
       </div>
     </nav>

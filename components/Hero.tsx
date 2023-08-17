@@ -1,16 +1,16 @@
 "use client";
 
+import HeroTitle from "./HeroTitle";
 import Subscribe from "./Subscribe";
 
 const Hero = () => {
   return (
     <header>
-      <div className="flex py-8 lg:py-14">
-        <h1 className="text-4xl sm:text-[3.35rem] md:text-7xl lg:text-[5.5rem] font-light leading-tight">
-          <span className="font-bold">Hey, we’re Blogy.</span> See our thoughts,
-          stories and ideas.
-        </h1>
-      </div>
+      <HeroTitle
+        title="Hey, we’re Blogy."
+        subTitle=" See our thoughts, stories and
+        ideas."
+      />
       <div className="flex items-center lg:w-[90%] xl:w-[70%] gap-4">
         <Subscribe />
         <div className="hidden lg:flex lg:w-[50%]">
