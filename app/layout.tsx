@@ -1,11 +1,6 @@
-"use client";
-
-import SearchBox from "@/components/SearchBox";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { useState } from "react";
-import Navbar from "@/components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,14 +14,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const [searchOpen, setSearchOpen] = useState<Boolean>(false);
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <SearchBox show={searchOpen} onClose={setSearchOpen} />
-        <Navbar onClick={() => setSearchOpen(true)} />
-        {children}
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
