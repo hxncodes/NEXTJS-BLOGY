@@ -65,3 +65,7 @@ If you're interested in contributing to Blogy, please follow these steps:
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
+
+## Auth Branch
+
+1. Working on auth from firebase, following this guide [freecodecamp](https://www.freecodecamp.org/news/create-full-stack-app-with-nextjs13-and-firebase/)

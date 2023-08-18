@@ -14,8 +14,8 @@ export default function Home() {
   return (
     <main>
       <SearchBox show={searchOpen} onClose={setSearchOpen} />
-      <Navbar onClick={() => setSearchOpen(true)} />
       <div className="main-container">
+        <Navbar onClick={() => setSearchOpen(true)} />
         <Hero />
         <Stories />
         <LatestBlogs />

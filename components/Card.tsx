@@ -4,7 +4,7 @@ import Link from "next/link";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 interface Props {
-  title: string;
+  title?: string;
   description?: string;
   imageURL: string;
   tags?: string[];

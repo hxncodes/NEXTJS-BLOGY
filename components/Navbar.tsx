@@ -18,7 +18,7 @@ const Navbar = ({ onClick }: Props) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isLogIn, setLogin] = useState(false);
   return (
-    <nav className="main-container flex items-center justify-between flex-wrap pt-7">
+    <nav className="flex items-center justify-between flex-wrap pt-7">
       <div className="mr-6 lg:mr-72">
         <Logo />
       </div>

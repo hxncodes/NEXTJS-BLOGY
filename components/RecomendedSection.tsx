@@ -12,7 +12,6 @@ const RecomendedSection = () => {
         {blogs.map((blog) => (
           <Card
             key={blog.id}
-            title={blog.title}
             imageURL={blog.imageURL}
             tags={blog.tags}
             authors={blog.authors}
