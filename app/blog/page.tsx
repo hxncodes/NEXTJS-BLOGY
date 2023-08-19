@@ -1,10 +1,18 @@
 "use client";
 
+import React from "react";
+import { useAuthContext } from "@/context/AuthContext";
+import { useRouter } from "next/navigation";
 import HeroTitle from "@/components/HeroTitle";
 import LatestBlogs from "@/components/LatestBlogs";
-import React from "react";
 
 const Blog = () => {
+  const { user } = useAuthContext();
+  const router = useRouter();
+
+  React.useEffect(() => {
+    if (user == null) router.push("/");
+  }, [user]);
   return (
     <div>
       <HeroTitle

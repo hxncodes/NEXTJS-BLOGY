@@ -26,7 +26,7 @@ export const navLinksBlog = [
   },
   {
     name: "Edit Blog",
-    url: "/blog/edit",
+    url: "/blog/edit/blog1",
   },
 ];
 
