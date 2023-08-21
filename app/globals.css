@@ -21,7 +21,7 @@
 @layer utilities {
 
   .main-container {
-      @apply max-w-[1320px] w-full mx-auto px-4 sm:px-14 overflow-x-hidden
+      @apply max-w-[1200px] w-full mx-auto px-4 sm:px-14 overflow-x-hidden
   }
 
   .btn {@apply py-2 px-5 rounded-3xl font-medium}

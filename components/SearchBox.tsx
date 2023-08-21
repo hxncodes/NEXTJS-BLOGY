@@ -11,18 +11,18 @@ const SearchBox = ({ show, onClose }: Props) => {
   return (
     <div
       style={{ transform: show ? "translateY(0%)" : "translateY(-200%)" }}
-      className="transition-all duration-500 overflow-x-hidden w-full flex h-full items-center flex-col bg-gray-900 bg-opacity-75 z-10 fixed top-0  "
+      className="transition-all duration-500 w-full flex h-full items-center flex-col bg-gray-900 bg-opacity-75 z-10 fixed top-0  "
     >
-      <div className="">
+      <div className="main-container">
         <div className="flex w-full items-center justify-between h-28 md:h-36 px-5 bg-white">
-          <div className="flex flex-col w-[95%]">
+          <div className="flex flex-col w-[90%]">
             <input
               className="outline-none text-3xl md:text-5xl font-bold placeholder-black"
               type="text"
               required
               placeholder="Search"
             />
-            <p className="text-base text-gray-600 mt-2">
+            <p className="text-[.75rem] md:text-base text-gray-600 mt-2">
               Please enter at least 3 characters
             </p>
           </div>
